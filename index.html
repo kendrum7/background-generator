@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrenheit Temperature conversion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fahrenheit Converter</h1>
+    <table>
+        <tr>
+            <td>
+                <label class="textLabel">Value to Convert:</label>
+                <input id="fTemp" type="text">
+            </td>
+         </tr>
+         <tr>
+             <td>
+                 <label  class="textLabel">Convert To:</label>
+                 <select onchange = "onSelectChange()" id="units" required>
+                     <option value="" disabled selected="selected">-Select an option-</option>
+                    <option value"Celsius">Celsius</option>
+                    <option value"Kelvin">Kelvin</option>
+                    <option value"Rankine">Rankine</option>
+                 </select>
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <input type="button" disabled value="Convert" onclick="convertTemp()" id="convertButton">
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <output id="convertedValue"></output>
+             </td>
+         </tr>
+    </table>
+    
+    <script type="text/javascript" src="convert.js"></script>
+</body>
+</html>

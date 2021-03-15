@@ -1,0 +1,14 @@
+table {
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.textLabel{
+    color:green;
+}
